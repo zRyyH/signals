@@ -1,0 +1,26 @@
+{
+  "telegram": {
+    "bot_token": "8116318094:AAE5cO2UUkHO4dXgAmTcGed7OWZvJl9lPKQ",
+    "chat_id": "-4800412307"
+  },
+  "pairs": [
+    "EURUSD",
+    "GBPUSD",
+    "USDJPY",
+    "AUDCAD",
+    "USDCAD"
+  ],
+  "gale_levels": [
+    "G0",
+    "G1",
+    "G2"
+  ],
+  "settings": {
+    "rsi_period": 14,
+    "rsi_oversold": 30,
+    "rsi_overbought": 70,
+    "ma_period": 20,
+    "signal_cooldown": 120,
+    "expiration_minutes": 1
+  }
+}
