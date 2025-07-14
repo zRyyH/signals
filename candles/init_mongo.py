@@ -1,4 +1,10 @@
+import logging
 from pymongo import MongoClient
+
+logging.basicConfig(
+    format="[%(asctime)s] %(levelname)s: %(message)s", level=logging.INFO
+)
+logger = logging.getLogger(__name__)
 
 
 def init_mongo_db(
@@ -14,8 +20,7 @@ def init_mongo_db(
         uri = f"mongodb://{host}:{port}/"
 
     client = MongoClient(uri)
-
     db = client[target_db]
 
-    print(f"Banco '{target_db}' inicializado com sucesso.")
+    logger.info(f"✅ MongoDB conectado: banco '{target_db}'")
     return db
