@@ -95,7 +95,7 @@ class MongoDBTradingSignals:
         except FileNotFoundError:
             with open("config.json", "w") as f:
                 json.dump(default_config, f, indent=2)
-            print("📋 Arquivo config.json criado. Configure suas credenciais!")
+            logger.info("📋 Arquivo config.json criado. Configure suas credenciais!")
             return default_config
 
     def send_message(self, message, reply_to_message_id=None):
