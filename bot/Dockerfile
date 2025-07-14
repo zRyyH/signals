@@ -8,6 +8,7 @@ WORKDIR /app
 COPY requirements.txt .
 COPY main.py .
 COPY bot_telegram.py .
+COPY config.json .
 
 # Instala dependências
 RUN pip install --no-cache-dir -r requirements.txt
